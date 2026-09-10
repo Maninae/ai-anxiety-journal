@@ -987,6 +987,24 @@ main:focus { outline: none; }
   margin: 0 0.5rem;
 }
 
+.footer-credit {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 300;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.footer-credit a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-credit a:hover {
+  color: var(--accent);
+}
+
 /* ======================================
    RESPONSIVE
    ====================================== */

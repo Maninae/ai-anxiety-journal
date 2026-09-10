@@ -79,6 +79,9 @@
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ $desc }}">
 <meta name="author" content="{{ .Site.Params.author }}">
+{{/* Canonical: .Permalink is absolute (baseURL = https apex), so this
+     collapses http/https and www/apex duplicates to one indexed URL. */}}
+<link rel="canonical" href="{{ .Permalink }}">
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ .Title }}">
